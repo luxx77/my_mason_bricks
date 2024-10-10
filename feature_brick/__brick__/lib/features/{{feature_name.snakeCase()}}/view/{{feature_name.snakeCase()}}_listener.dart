@@ -10,6 +10,7 @@ class {{feature_name.pascalCase()}}Listener extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return {{feature_name.pascalCase()}}View();
     return MultiBlocListener(
       listeners: [
         //set listernes
