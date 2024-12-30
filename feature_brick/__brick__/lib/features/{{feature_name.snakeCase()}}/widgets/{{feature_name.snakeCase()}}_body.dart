@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:features/{{feature_name.snakeCase()}}/{{feature_name.snakeCase()}}.dart';
 
 
-class {{feature_name.pascalCase()}}Body {{#isBloc}}extends StatelessWidget{{/isBloc}}{{#isCubit}}extends StatelessWidget{{/isCubit}}{{#isProvider}}extends StatelessWidget{{/isProvider}}{{#isNone}}extends StatelessWidget{{/isNone}}{{#isRiverpod}}extends ConsumerWidget{{/isRiverpod}} {
+class {{feature_name.pascalCase()}}Body extends StatelessWidget{
 
   const {{feature_name.pascalCase()}}Body({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final bloc = context.read<{{feature_name.pascalCase()}}Bloc>();
         return Center(child: Text('{{feature_name.pascalCase()}} created'));
      }
      
