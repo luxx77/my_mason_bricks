@@ -7,4 +7,3 @@ vars:
   feature_name:
     type: string
     description: The feature name
-    prompt: false
