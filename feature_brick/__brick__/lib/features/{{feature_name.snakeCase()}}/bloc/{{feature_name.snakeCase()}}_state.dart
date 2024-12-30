@@ -6,7 +6,7 @@ class {{feature_name.pascalCase()}}State with _${{feature_name.pascalCase()}}Sta
 
   const factory {{feature_name.pascalCase()}}State() = _{{feature_name.pascalCase()}}State;
 
-  static {{feature_name.pascalCase()}}State inital(){
+  static {{feature_name.pascalCase()}}State initial(){
     return {{feature_name.pascalCase()}}State();
   }
 }
