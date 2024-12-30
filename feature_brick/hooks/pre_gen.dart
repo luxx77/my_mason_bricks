@@ -4,7 +4,11 @@ import 'package:mason/mason.dart';
 import 'package:yaml/yaml.dart';
 
 Future run(HookContext context) async {
-  context.logger.info(context.vars.toString());
+  context.vars.addAll(
+    {
+      'feature_name': context.vars['name'],
+    },
+  );
   final logger = context.logger;
 
   final stateManagement = 'bloc';

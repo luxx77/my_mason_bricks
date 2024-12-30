@@ -4,6 +4,6 @@ version: 0.6.2
 # repository: https://github.com/LukeMoody01/mason_bricks/tree/master/bricks/feature_brick
 
 vars:
-  feature_name:
+  name:
     type: string
     description: The feature name
