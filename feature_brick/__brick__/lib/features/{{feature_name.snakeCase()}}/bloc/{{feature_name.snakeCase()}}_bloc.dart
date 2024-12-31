@@ -11,13 +11,6 @@ class {{feature_name.pascalCase()}}Bloc extends Bloc<{{feature_name.pascalCase()
   }
 
   FutureOr<void> _onInit(_Init event, Emitter<{{feature_name.pascalCase()}}State> emit  ) async {
-
-  emit(
-   state.copyWith(
-
-   ),
-  );
-
   }
 
 }
