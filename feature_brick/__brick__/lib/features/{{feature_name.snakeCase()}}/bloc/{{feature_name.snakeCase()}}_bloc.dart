@@ -12,10 +12,10 @@ part '{{feature_name.snakeCase()}}_bloc.g.dart';
 
 class {{feature_name.pascalCase()}}Bloc extends Bloc<{{feature_name.pascalCase()}}Event, {{feature_name.pascalCase()}}State> {
   {{feature_name.pascalCase()}}Bloc() : super({{feature_name.pascalCase()}}State.initial()) {
-    on<_Init>(_onInit);
+    on<{{feature_name.pascalCase()}}InitEvent>(_onInit);
   }
 
-  FutureOr<void> _onInit(_Init event, Emitter<{{feature_name.pascalCase()}}State> emit  ) async {
+  FutureOr<void> _onInit({{feature_name.pascalCase()}}InitEvent event, Emitter<{{feature_name.pascalCase()}}State> emit  ) async {
   }
-k
+
 }
